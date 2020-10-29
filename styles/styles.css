@@ -1,0 +1,87 @@
+:root {
+  --grid-size: 16;
+}
+
+body {
+  min-height: 100%;
+  width: 100vw;
+  text-align: center;
+  font-family: monospace;
+  background-color: rgb(214, 214, 214);
+}
+
+.title {
+  font-size: 3em;
+  margin: 30px 20px 0;
+}
+
+/* Color Options */
+.color-options {
+  margin: 20px 0px 10px 0px;
+
+}
+
+.color-options span {
+  font-size: 1.5em;
+}
+
+.color-options button {
+  font-size: 1.4em;
+  border: none;
+  background: rgb(240, 220, 220);
+  font-family: monospace;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
+
+#black:focus-visible {
+  color: #FFF;
+  background-color: black;
+  outline: none;
+}
+#black:focus, #black:hover {
+  color: #FFF;
+  background-color: black;
+  outline: none;
+  
+}
+
+#random:focus, #random:hover {
+  background: linear-gradient(to right, red, green, blue);
+  color: #FFF;
+  outline: none;
+}
+
+/* Grids */
+.container {
+  margin: 0 auto;
+  margin-top: 25px;
+  height: 500px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(var(--grid-size), 1fr);
+  grid-template-rows: repeat(var(--grid-size), 1fr);
+  box-shadow: 5px 5px cadetblue;
+  
+
+}
+
+.grid {
+  background-color: rgb(255, 255, 255);
+  border: 1px dotted black;
+}
+
+/* Create (resize) grid button */
+.create-grid {
+  margin-top: 25px;
+  font-size: 1.5em;
+  font-family: monospace;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.create-grid:hover {
+  transform: scale(1.1);
+  outline: none;
+}
